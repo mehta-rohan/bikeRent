@@ -1,0 +1,79 @@
+<section class="create">
+    <div class="container">
+        <form action="/create" method="POST">
+            <div class="create__title">
+                <img src="https://emojio.ru/images/apple-b/1f911.png" alt="">
+                <h2>Create new rent</h2>
+            </div>
+            <div class="create__input">
+                <div class="create__input-field n1">
+                    <label>Bike name</label>
+                    <input type="text" name="title">
+                </div>
+                <div class="create__input-field n2">
+                    <label>Bike type</label>
+                    <input type="text" name="type">
+                </div>
+                <div class="create__input-field n3">
+                    <label>Rent price</label>
+                    <input type="number" name="price">
+                </div>
+                <div class="create__input-field n4">
+                    <button type="submit" class="btn">Submit rent</button>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+</section>
+
+{{> create}}
+
+
+<section class="rent">
+    <div class="container">
+        <div class="rent__title">
+
+            <img src="https://emojio.ru/images/apple-b/1f6b2.png" alt="">
+            <h2 id="rh">Available bicycles </h2>
+        </div>
+        <div class="rent__list">
+            {{#if todos.length }}
+                <ul class="ul">
+                    {{#each todos}}
+                        {{#unless status}}
+
+                        <li class="todo">
+                            <form action="/rented" method="post">
+                                <label>
+
+
+                                        <span >{{title}} &nbsp / &nbsp {{type}} &nbsp/ &nbsp ${{price}}</span>
+
+
+                                    <input type="hidden" value="{{_id}}" name="id">
+                                    <span class="rent__buttons">
+                                    <button class="btn b1" type="submit" >Rent</button>
+                                    <button formaction="/delete" class="btn b2" >Delete</button>
+                                    </span>
+                                </label>
+                            </form>
+                        </li>
+                        {{/unless}}
+                    {{/each}}
+                </ul>
+            {{else}}
+                <p>No todos!</p>
+            {{/if}}
+        </div>
+
+    </div>
+</section>
+
+<script>
+let sum = document.getElementsByTagName('li').length;
+document.getElementById('rh').innerHTML += "(" + sum + ")"
+
+
+</script>

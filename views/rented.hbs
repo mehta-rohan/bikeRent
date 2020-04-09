@@ -1,0 +1,32 @@
+<section id="rent" class="rent">
+    <div class="container">
+        <div class="rent__title">
+            <img src="https://emojio.ru/images/apple-b/1f929.png" alt="">
+            <h2>Your rent (Total:${{price}})</h2>
+        </div>
+         <div class="rent__list">
+
+            <ul class="ul">
+                {{#each todos}}
+                    <li class="todo">
+                        <form action="/rented?id="+{{_id}} method="POST">
+                            <label>
+
+                                    <span class="rented">{{title}} &nbsp / &nbsp {{type}}
+                                        &nbsp/ &nbsp {{price}}</span>
+
+                                <input type="hidden" value="{{_id}}" name="id">
+                                <span class="rent__buttons">
+
+                                    <button formaction="/delete" class="btn b2" >Cancel Rent</button>
+                                    </span>
+                            </label>
+                        </form>
+                    </li>
+                {{/each}}
+            </ul>
+
+    </div>
+
+    </div>
+</section>

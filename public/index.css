@@ -1,0 +1,127 @@
+body {
+  background: #f5f5f5;
+}
+
+.todo {
+  margin-bottom: 1rem;
+}
+
+.todo span.completed {
+  text-decoration: line-through;
+}
+
+.todo label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background: #f3f3f3;
+  padding: 1rem;
+}
+
+.todo i {
+  z-index: 2;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.create .create__title {
+  display: flex;
+}
+.create .create__title h2 {
+  color: #202020;
+}
+.create .create__title img {
+  margin: 50px 10px 15px 0px;
+  width: 45px;
+  height: 45px;
+}
+.create .create__title div {
+  display: flex;
+}
+.create .create__input {
+  display: flex;
+  background: #e9eaee;
+  border: 1px solid #c9cacb;
+}
+.create .create__input .create__input-field {
+  padding: 20px;
+}
+.create .create__input .create__input-field label {
+  font-size: 15px;
+  color: #202020;
+  letter-spacing: 0;
+}
+.create .create__input .create__input-field input {
+  margin-top: 5px;
+  background: #ffffff;
+  border: 1px solid #c9cacb;
+}
+.create .create__input .create__input-field .btn {
+  font-size: 16px;
+  height: 45px;
+  width: 150px;
+  text-transform: none;
+}
+.create .create__input .n1, .create .create__input .n2 {
+  width: 35%;
+}
+.create .create__input .n3 {
+  width: 15%;
+}
+.create .create__input .n4 {
+  margin-top: 25px;
+}
+
+.rent {
+  margin-top: 40px;
+}
+.rent .rent__title {
+  display: flex;
+}
+.rent .rent__title h2 {
+  color: #202020;
+}
+.rent .rent__title img {
+  margin: 50px 10px 15px 0px;
+  width: 45px;
+  height: 45px;
+}
+.rent .rent__title div {
+  display: flex;
+}
+.rent .rent__list label {
+  background: #ffffff;
+  border: 1px solid #c9cacb;
+}
+.rent .rent__list label .b1 {
+  font-size: 16px;
+  text-transform: none;
+  height: 45px;
+  width: 140px;
+  background: #3750c7;
+  margin-right: 15px;
+}
+.rent .rent__list label .b2 {
+  font-size: 16px;
+  text-transform: none;
+  height: 45px;
+  width: 140px;
+  background: #e4424a;
+}
+.rent .rent__list label span {
+  font-size: 26px;
+  color: #202020;
+}

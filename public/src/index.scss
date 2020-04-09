@@ -1,0 +1,164 @@
+body {
+  background: #f5f5f5;
+}
+
+.todo {
+  margin-bottom: 1rem;
+}
+
+.todo span.completed {
+  text-decoration: line-through;
+}
+
+.todo label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background: #f3f3f3;
+  padding: 1rem;
+}
+
+.todo i {
+  z-index: 2;
+}
+
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.create {
+
+  .create__title {
+    display: flex;
+
+    h2 {
+
+      color: #202020;
+    }
+
+    img {
+      margin: 50px 10px 15px 0px;
+      width: 45px;
+      height: 45px;
+
+    }
+
+
+    div {
+      display: flex;
+    }
+
+  }
+
+
+  .create__input {
+    display: flex;
+    background: #e9eaee;
+    border: 1px solid #c9cacb;
+
+
+    .create__input-field {
+      padding: 20px;
+
+      label {
+        font-size: 15px;
+        color: #202020;
+        letter-spacing: 0;
+      }
+
+      input {
+        margin-top: 5px;
+        background: #ffffff;
+        border: 1px solid #c9cacb;
+      }
+
+      .btn {
+        font-size: 16px;
+        height: 45px;
+        width: 150px;
+        text-transform: none;
+      }
+    }
+
+    .n1, .n2 {
+      width: 35%;
+    }
+
+    .n3 {
+      width: 15%
+    }
+
+    .n4 {
+      margin-top: 25px;
+
+    }
+  }
+}
+
+.rent {
+  margin-top: 40px;
+
+  .rent__title {
+    display: flex;
+
+    h2 {
+
+      color: #202020;
+    }
+
+    img {
+      margin: 50px 10px 15px 0px;
+      width: 45px;
+      height: 45px;
+
+    }
+
+
+    div {
+      display: flex;
+    }
+
+  }
+
+  .rent__list {
+    label {
+      background: #ffffff;
+      border: 1px solid #c9cacb;
+
+      .b1 {
+        font-size: 16px;
+        text-transform: none;
+        height: 45px;
+        width: 140px;
+        background: #3750c7;
+        margin-right: 15px;
+      }
+      .b2 {
+        font-size: 16px;
+        text-transform: none;
+        height: 45px;
+        width: 140px;
+        background: #e4424a;
+      }
+
+      span {
+        font-size: 26px;
+        color: #202020;
+
+      }
+    }
+  }
+}
+

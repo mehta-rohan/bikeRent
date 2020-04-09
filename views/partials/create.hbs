@@ -1,0 +1,38 @@
+<section class="rent">
+    <div class="container">
+        <div class="rent__title">
+            <img src="https://emojio.ru/images/apple-b/1f929.png" alt="">
+            <h2>Your rent (Total:${{price}})</h2>
+        </div>
+         <div class="rent__list">
+             {{!-- {{#if completed}} --}}
+
+            <ul class="ul">
+                {{#each todos}}
+                    {{#if status}} 
+                        <li class="todo">
+                            <form action="/rented" method="POST">
+                                <label>
+
+                                        <span class="rented">{{title}} &nbsp / &nbsp {{type}}
+                                            &nbsp/ &nbsp {{price}}</span>
+
+                                    <input type="hidden" value="{{_id}}" name="id">
+                                    <span class="rent__buttons">
+
+
+                                        <button formaction="/delete" class="btn b2" >Cancel Rent</button>
+                                        </span>
+                                </label>
+                            </form>
+                        </li>
+                    {{/if}}
+                {{/each}}
+            </ul>
+        {{!-- {{else}}
+            <p>Empty list!</p>
+        {{/if}} --}}
+    </div>
+
+    </div>
+</section>
